@@ -1,4 +1,4 @@
-# gorkogo55-landing
+# gorkogo55-landing-v2
 
 ## Технологический стек
 
