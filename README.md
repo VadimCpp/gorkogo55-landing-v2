@@ -20,4 +20,4 @@
 
 ## Изображение торгового центра
 
-![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing/blob/master/assets/%20readme/background.jpg)
+![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing-v2/blob/master/assets/%20readme/background.jpg)
