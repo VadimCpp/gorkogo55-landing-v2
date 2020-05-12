@@ -50,9 +50,9 @@
               <span>
                 <i class="far fa-clock text-secondary" ></i>
               </span>
-              с 09:00 до 19:00
+              с 10:00 до 18:00
               <span id="text-open" class="text-success d-none">
-                Вход в ТЦ временно со стороны клуба Аватар
+                (Сейчас открыто)
               </span>
             </li>
           </ul>
@@ -99,19 +99,6 @@
     </footer>
 
     <script type="text/javascript">
-      // https://stackoverflow.com/a/800010/1775459
-      document.addEventListener("DOMContentLoaded", function() {
-        var element = document.getElementById("text-open");
-        if (element) {
-          var kaliningradHours = new Date().getUTCHours() + 2;
-          var isMallOpened = kaliningradHours >= 9 && kaliningradHours < 19;
-
-          if (isMallOpened) {
-            element.classList.remove("d-none");
-          }
-        }
-      });
-
       //Открытие и закрытие меню по нажатию на "гамбургер"
       var menuBtn = document.getElementById( "menuBtn" );
       var menu = document.getElementById( "menu" );
@@ -171,4 +158,5 @@
     <!-- /Yandex.Metrika counter -->
   </body>
   <script src="./js/time.js"></script>
+  <script src="./js/working-hours.js"></script>
 </html>
