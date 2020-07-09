@@ -1,0 +1,18 @@
+name: Publish bagrationa49.ru
+on:
+  push:
+    branches: [ bagrationa49 ]
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER_BAGRATIONA }}
+        ftp-username: ${{ secrets.FTP_USERNAME_BAGRATIONA }}
+        ftp-password: ${{ secrets.FTP_PASSWORD_BAGRATIONA }}
