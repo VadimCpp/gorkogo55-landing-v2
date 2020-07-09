@@ -38,3 +38,10 @@
 ## Изображение торгового центра
 
 ![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing-v2/blob/bagrationa49/assets/%20readme/background.jpg)
+
+
+## Continuous deployment
+
+Настроен Continuous deployment:
+* ветка мастер для сайта [gorkogo55.ru](https://gorkogo55.ru) (файл - main.yml);
+* ветка bagration49 для сайта [bagrationa49.ru](https://bagrationa49.ru) (файл - bagrationa.yml).
