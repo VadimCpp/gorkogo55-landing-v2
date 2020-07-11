@@ -39,15 +39,12 @@
 
 ![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing-v2/blob/bagrationa49/assets/%20readme/background.jpg)
 
-<<<<<<< HEAD
-=======
 ## Правила разработки
 
 Общий функционал сайтов реализовать в ветке master, а затем выполнить merge в ветки gorkogo55 и bagrationa49
 
 Частные изменения (например: иконки, контакты) реализовать в соответствующей ветке
 
->>>>>>> master
 ## Continuous deployment
 
 Настроен Continuous deployment:
