@@ -51,5 +51,5 @@
 ## Continuous deployment
 
 Настроен Continuous deployment:
-* ветка gorkogo55 для сайта [gorkogo55.ru](https://gorkogo55.ru) (файл - main.yml);
-* ветка bagration49 для сайта [bagrationa49.ru](https://bagrationa49.ru) (файл - bagrationa.yml).
+* ветка gorkogo55 для сайта [gorkogo55.ru](https://gorkogo55.ru) (файл - gorkogo55.yml);
+* ветка bagration49 для сайта [bagrationa49.ru](https://bagrationa49.ru) (файл - bagrationa49.yml).
