@@ -5,6 +5,16 @@
 
  @import url(./all.css);
 
+ .header {
+  border-bottom: 1px solid #888888;
+  text-align: left;
+  height: 53px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+
 .header__menuwrapper{
   position: sticky;
   top: 53px;
@@ -51,16 +61,6 @@
   width: 20px;
   height: 20px;
   margin: 3px 5px 5px 0;
-}
-
-.header {
-  border-bottom: 1px solid #888888;
-  text-align: left;
-  height: 53px;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 2;
 }
 
 /* модифицируется высота блока на всех страницах, кроме index.html*/
