@@ -15,7 +15,7 @@
   z-index: 2;
 }
 
-.header__menuwrapper{
+.menu {
   position: sticky;
   top: 53px;
   z-index: 3;
@@ -25,7 +25,7 @@
 }
 
 /*Фикс меню везде кроме index.html*/
-.header__menuwrapper__top{
+.menu__top{
   top: 125px !important;
 }
 
