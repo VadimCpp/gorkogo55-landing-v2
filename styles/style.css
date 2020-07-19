@@ -25,7 +25,7 @@
 }
 
 /*Фикс меню везде кроме index.html*/
-.menu__top{
+.menu--extended-offset {
   top: 125px !important;
 }
 
