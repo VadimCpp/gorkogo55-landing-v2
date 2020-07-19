@@ -46,12 +46,13 @@
   top: 125px !important;
 }
 
-.header__menu {
+.menu__list {
   position: absolute;
   right: 0;
   list-style: none;
   padding-inline-start: 0px;
   z-index: 4;
+  margin-bottom: 0;
 }
 
 .header__menu a {
