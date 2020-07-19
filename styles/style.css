@@ -24,7 +24,6 @@
   filter: alpha(opacity=100);
 }
 
-/*Фикс меню везде кроме index.html*/
 .menu--extended-offset {
   top: 125px !important;
 }
@@ -63,8 +62,7 @@
   margin: 3px 5px 5px 0;
 }
 
-/* модифицируется высота блока на всех страницах, кроме index.html*/
-.header__height {
+.header--extended-height {
   height: 125px !important;
 }
 
