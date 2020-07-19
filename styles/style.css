@@ -5,7 +5,21 @@
 
  @import url(./all.css);
 
- .header {
+.motto {
+  padding-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.motto__label {
+  margin-left: 25px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.header {
   border-bottom: 1px solid #888888;
   text-align: left;
   height: 53px;
@@ -13,6 +27,10 @@
   top: 0;
   background-color: white;
   z-index: 2;
+}
+
+.header--extended-height {
+  height: 125px !important;
 }
 
 .menu {
@@ -60,16 +78,6 @@
   width: 20px;
   height: 20px;
   margin: 3px 5px 5px 0;
-}
-
-.header--extended-height {
-  height: 125px !important;
-}
-
-.header__welcome {
-  margin-left: 25px;
-  font-style: italic;
-  font-size: 14px;
 }
 
 .header__logo {
