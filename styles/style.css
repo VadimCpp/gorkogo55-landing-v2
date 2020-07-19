@@ -59,7 +59,7 @@
   text-align: center;
 }
 
-.header__menu a {
+.menu__link {
   color: rgb(56, 56, 56);
   display: block; 
   width: 180px; 
@@ -69,7 +69,7 @@
   border-radius: 0px !important;
 }
 
-.header__menu a:hover {
+.menu__link:hover {
   text-decoration: none; 
   background-color: #d3d3d3;
   color: rgb(56, 56, 56);
