@@ -67,6 +67,7 @@
   padding: 10px; 
   border: 1px solid #ccc; 
   border-radius: 0px !important;
+  justify-content: center;
 }
 
 .menu__link:hover {
