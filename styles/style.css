@@ -33,6 +33,23 @@
   height: 125px !important;
 }
 
+.header__logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+
+.header__name55 {
+  font-size: 24px;
+  margin-left: 2px;
+  margin-top: 6px;
+}
+
+.header__menubar {
+  margin-top: 19px;
+  margin-left: auto;
+}
+
 .menu {
   position: sticky;
   top: 53px;
@@ -80,23 +97,6 @@
   width: 20px;
   height: 20px;
   margin: 3px 5px 5px 0;
-}
-
-.header__logo {
-  width: 20px;
-  height: 20px;
-  margin-top: 15px;
-}
-
-.header__name55 {
-  font-size: 24px;
-  margin-left: 2px;
-  margin-top: 6px;
-}
-
-.header__menubar {
-  margin-top: 19px;
-  margin-left: auto;
 }
 
 .top-div {
