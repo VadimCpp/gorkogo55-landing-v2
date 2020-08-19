@@ -159,43 +159,35 @@
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function() {
       //
-      // NOTE!
+      // Открытие и закрытие меню по нажатию на "гамбургер"
       //
-      // Весь JavaScript код должен быть внутри этой функции.
-      //
-      // Событие DOMContentLoaded происходит когда весь HTML был полностью загружен и
-      // пройден парсером, не дожидаясь окончания загрузки таблиц стилей, изображений и фреймов.
-      //
-      // Подробнее читать здесь:
-      //  https://developer.mozilla.org/ru/docs/Web/Events/DOMContentLoaded
-      //  https://stackoverflow.com/a/800010/1775459
-      //
+      var menuBtn = document.getElementById("menuBtn");
+      var menu = document.getElementById("menu");
+      menuBtn.addEventListener('click', function(event) {
+        if (menu.classList.contains("d-none")) {
+          menu.classList.remove("d-none");
+        } else {
+          menu.classList.add("d-none");
+        }
+        event.stopPropagation();
+      });
 
       //
-      //  - Устанавливает прозрачность текста "Добро пожаловать"
-      //    в зависимости от отступа во время скрола.
+      // закрытие меню, если оно открыто кликом по пустому месту
+      //
+      document.addEventListener("click", function(event) {
+        if (!menu.classList.contains("d-none")) {
+          menu.classList.add("d-none");
+        }
+      });
+
+      //
+      // Устанавливает прозрачность текста "Добро пожаловать"
+      // в зависимости от отступа во время скрола.
       //
       document.addEventListener("scroll", function() {
         document.getElementById("welcome").style.opacity = (60 - pageYOffset) / 60;
       });
-    });
-
-    //Открытие и закрытие меню по нажатию на "гамбургер"
-    var menuBtn = document.getElementById("menuBtn");
-    var menu = document.getElementById("menu");
-    menuBtn.addEventListener('click', function(event) {
-      if (menu.classList.contains("d-none")) {
-        menu.classList.remove("d-none");
-      } else {
-        menu.classList.add("d-none");
-      }
-      event.stopPropagation();
-    });
-    //закрытие меню, если оно открыто кликом по пустому месту
-    document.addEventListener("click", function(event) {
-      if (!menu.classList.contains("d-none")) {
-        menu.classList.add("d-none");
-      }
     });
   </script>
 

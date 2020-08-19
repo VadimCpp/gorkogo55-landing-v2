@@ -107,22 +107,29 @@
   </footer>
 
   <script type="text/javascript">
-    //Открытие и закрытие меню по нажатию на "гамбургер"
-    var menuBtn = document.getElementById("menuBtn");
-    var menu = document.getElementById("menu");
-    menuBtn.addEventListener('click', function(event) {
-      if (menu.classList.contains("d-none")) {
-        menu.classList.remove("d-none");
-      } else {
-        menu.classList.add("d-none");
-      }
-      event.stopPropagation();
-    });
-    //закрытие меню, если оно открыто кликом по пустому месту
-    document.addEventListener("click", function(event) {
-      if (!menu.classList.contains("d-none")) {
-        menu.classList.add("d-none");
-      }
+    document.addEventListener("DOMContentLoaded", function() {
+      //
+      // Открытие и закрытие меню по нажатию на "гамбургер"
+      //
+      var menuBtn = document.getElementById("menuBtn");
+      var menu = document.getElementById("menu");
+      menuBtn.addEventListener('click', function(event) {
+        if (menu.classList.contains("d-none")) {
+          menu.classList.remove("d-none");
+        } else {
+          menu.classList.add("d-none");
+        }
+        event.stopPropagation();
+      });
+
+      //
+      // закрытие меню, если оно открыто кликом по пустому месту
+      //
+      document.addEventListener("click", function(event) {
+        if (!menu.classList.contains("d-none")) {
+          menu.classList.add("d-none");
+        }
+      });
     });
   </script>
 
