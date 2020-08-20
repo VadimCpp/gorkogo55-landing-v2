@@ -1,206 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- https://realfavicongenerator.net/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!-- /https://realfavicongenerator.net/ -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Сайт торгового центра «Рембыттехника»</title>
-    <link rel="stylesheet" href="./styles/style.css?v=2" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-      crossorigin="anonymous"
-    />
-  </head>
+  <!-- https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- /https://realfavicongenerator.net/ -->
 
-  <body>
-    <div class="header header__height">
-      <div class="container pt-5 pb-3">
-        <div class="d-flex pt-4">
-          <a href="index.html"><img class="header__logo" src="./assets/img/logo-bagrationa59.png" alt="logo" /></a>
-          <span class="header__name55 font-italic">Арендаторам</span>
-          <i class="fas fa-bars fa-lg header__menubar text-secondary" id="menuBtn"></i>
-        </div>
+  <title>Сайт торгового центра «Рембыттехника»</title>
+  <link rel="stylesheet" href="./styles/style.css?v=2" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous"
+  />
+</head>
+
+<body>
+  <div class="header header--extended-height">
+    <div class="container pt-5 pb-3">
+      <div class="d-flex pt-4">
+        <a href="index.html"><img class="header__logo" src="./assets/img/logo-bagrationa59.png" alt="logo" /></a>
+        <span class="header__name55 font-italic">Арендаторам</span>
+        <i class="fas fa-bars fa-lg header__menubar text-secondary" id="menuBtn"></i>
       </div>
     </div>
+  </div>
 
-    <div class="header__menuwrapper header__menuwrapper__top d-none" id="menu">
-      <div class="container">
-        <ul class="header__menu">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="visitors.html">Посетителям</a></li>
-          <li><a href="tenants.html" class="list-group-item disabled">Арендаторам</a></li>
-          <li><a href="owners.html">Собственникам</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li>
-            <a href="https://gorkogo55.ru/">
-              <img class="header__menuicon" src="./assets/img/logo-gorkogo55.png" alt="logo" />
-              Две пятерки
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <div class="menu menu--extended-offset d-none" id="menu">
+    <ul class="menu__list">
+      <li class="menu__list-item"><a href="index.html" class="menu__link">Главная</a></li>
+      <li class="menu__list-item"><a href="visitors.html" class="menu__link">Посетителям</a></li>
+      <li class="menu__list-item"><a href="tenants.html" class="menu__link list-group-item disabled">Арендаторам</a></li>
+      <li class="menu__list-item"><a href="owners.html" class="menu__link">Собственникам</a></li>
+      <li class="menu__list-item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+      <li class="menu__list-item">
+        <a href="https://gorkogo55.ru/" class="menu__link">
+          <img class="menu__icon" src="./assets/img/logo-gorkogo55.png" alt="logo" /> Две пятерки
+        </a>
+      </li>
+    </ul>
+  </div>
 
-    <div class="top-div">
-      <div class="container pb-3">
-        <ul class="list-unstyled">
-          <li>
-            <i class="fas fa-map-marker-alt text-secondary"></i>
-            <a href="https://yandex.ru/maps/org/rembyttekhnika/158567125435/?ll=20.509550%2C54.698957&z=18">
-              <span>
-                Калининград, улица Багратиона, 49
-              </span>
-            </a>
-          </li>
-          <li>
-            <span>
-              <i class="far fa-clock text-secondary" ></i>
-            </span>
-            с 10:00 до 18:00
-            <span id="text-open" class="text-success d-none">
-              (Сейчас открыто)
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <div class="container pt-3 pb-3">
+    <ul class="list-unstyled">
+      <li class="mt-2">
+        <i class="fas fa-map-marker-alt text-secondary"></i>
+        <a href="https://yandex.ru/maps/org/rembyttekhnika/158567125435/?ll=20.509550%2C54.698957&z=18">
+          Калининград, улица Багратиона, 49
+        </a>
+      </li>
+      <li class="mt-2">
+        <i class="far fa-clock text-secondary"></i> с 10:00 до 18:00
+        <span id="text-open" class="text-success d-none">
+          (Сейчас открыто)
+        </span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="container pb-3">
+    <h2 class="pb-3">
+      Уважаемые арендаторы!
+    </h2>
+    <p>
+      Цель этого сайта - помогать Вам продвигать Ваши <strong>товары и услуги</strong>.
+    </p>
+    <p>
+      Если у Вас изменилась <strong>контактная информация</strong> - сообщите, пожалуйста, программисту. Ваша актуальная информация, размещенная на сайте, поможет клиенту найти Вас.
+    </p>
+    <p>
+      Проверьте, пожалуйста, иформацию о Вашей компании:
+    </p>
+    <p class="text-center">
+      <a class="btn btn-danger btn-lg" href="http://shop.bagrationa49.ru/search">ВСЕ МАГАЗИНЫ ТУТ</a>
+    </p>
+  </div>
 
-    <div class="container pb-3">
-      <h2 class="pb-3">
-        Уважаемые арендаторы!
-      </h2>
-      <p>
-        Цель этого сайта - помогать Вам продвигать Ваши <strong>товары и услуги</strong>.
-      </p>
-      <p>
-        Если у Вас изменилась <strong>контактная информация</strong> - сообщите пожалуйста программисту.
-        Ваша актуальная информация, размещенная на сайте, поможет клиенту найти Вас.
-      </p>
-      <p>
-        Проверьте, пожалуйста, иформацию о Вашей компании:
-      </p>      
-      <p class="text-center">
-        <a class="btn btn-danger btn-lg" href="http://shop.bagrationa49.ru/search"
-          >ВСЕ МАГАЗИНЫ ТУТ</a
+  <div class="container pb-3">
+    <p>
+      Вся контактная информация находится на странице «Контакты». Вы можете задать любые вопросы. Мы работаем для Вас!
+    </p>
+    <p class="text-center">
+      <a class="btn btn-danger btn-lg" href="contacts.html">КОНТАКТЫ</a>
+    </p>
+  </div>
+
+  <div class="container py-3 text-center">
+    <p class="text-center">
+      <a class="btn btn-outline-primary" href="index.html">Вернуться на главную</a>
+    </p>
+  </div>
+
+  <footer class="container pb-5">
+    <div class="row">
+      <div class="col-6">
+        <!-- Yandex.Metrika informer -->
+        <a
+          href="https://metrika.yandex.ru/stat/?id=65351818&amp;from=informer"
+          target="_blank"
+          rel="nofollow"
         >
-      </p>
-    </div>
-
-    <div class="container pb-3">
-      <p>
-        Вся контактная информация находится на странице «Контакты».
-        Вы можете задать любые вопросы.
-        Мы работаем для Вас!
-      </p>
-      <p class="text-center">
-        <a class="btn btn-danger btn-lg" href="contacts.html">КОНТАКТЫ</a>
-      </p>
-    </div>
-
-    <div class="container py-3 text-center">
-      <p class="text-center">
-        <a class="btn btn-outline-primary" href="index.html">Вернуться на главную</a>
-      </p>
-    </div>
-
-    <footer class="container pb-5">
-      <div class="row">
-        <div class="col-6">
-          <!-- Yandex.Metrika informer -->
-          <a
-            href="https://metrika.yandex.ru/stat/?id=65351818&amp;from=informer"
-            target="_blank"
-            rel="nofollow"
-          >
-            <img
-              src="https://informer.yandex.ru/informer/65351818/3_1_FFFFFFFF_FFFFFFFF_0_pageviews"
-              style="width:88px; height:31px; border:0;"
-              alt="Яндекс.Метрика"
-              title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
-              class="ym-advanced-informer"
-              data-cid="65351818"
-              data-lang="ru"
-            />
-          </a>
-          <!-- /Yandex.Metrika informer -->
-        </div>
-        <div class="col-6 text-right">
-          <small id="date"></small>
-        </div>
+          <img
+            src="https://informer.yandex.ru/informer/65351818/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+            style="width:88px; height:31px; border:0;"
+            alt="Яндекс.Метрика"
+            title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+            class="ym-advanced-informer"
+            data-cid="65351818"
+            data-lang="ru"
+          />
+        </a>
+        <!-- /Yandex.Metrika informer -->
       </div>
-    </footer>
+      <div class="col-6 text-right">
+        <small id="date"></small>
+      </div>
+    </div>
+  </footer>
 
-    <script type="text/javascript">
-      //Открытие и закрытие меню по нажатию на "гамбургер"
-      var menuBtn = document.getElementById( "menuBtn" );
-      var menu = document.getElementById( "menu" );
-      menuBtn.addEventListener( 'click', function (event) {
-        if ( menu.classList.contains( "d-none" ) )  {
-          menu.classList.remove( "d-none" );
-        }
-        else {
-          menu.classList.add( "d-none" );
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      //
+      // Открытие и закрытие меню по нажатию на "гамбургер"
+      //
+      var menuBtn = document.getElementById("menuBtn");
+      var menu = document.getElementById("menu");
+      menuBtn.addEventListener('click', function(event) {
+        if (menu.classList.contains("d-none")) {
+          menu.classList.remove("d-none");
+        } else {
+          menu.classList.add("d-none");
         }
         event.stopPropagation();
       });
-      //закрытие меню, если оно открыто кликом по пустому месту
+
+      //
+      // закрытие меню, если оно открыто кликом по пустому месту
+      //
       document.addEventListener("click", function(event) {
-        if ( !menu.classList.contains("d-none") ) {
-          menu.classList.add( "d-none" );
+        if (!menu.classList.contains("d-none")) {
+          menu.classList.add("d-none");
         }
       });
-    </script>
+    });
+  </script>
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function(m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function() {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-      ym(65351818, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/65351818"
-          style="position:absolute; left:-9999px;"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <script src="./js/time.js"></script>
-    <script src="./js/working-hours.js"></script>
-  </body>
+    ym(65351818, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/65351818" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <script src="./js/time.js"></script>
+  <script src="./js/working-hours.js"></script>
+</body>
+
 </html>
