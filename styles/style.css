@@ -65,7 +65,7 @@
 
 .menu__list {
   position: absolute;
-  right: 0;
+  right: 4vw;
   list-style: none;
   padding-inline-start: 0px;
   z-index: 4;
