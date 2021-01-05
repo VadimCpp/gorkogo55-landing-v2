@@ -35,9 +35,15 @@
 
 ![изображение торгового центра](https://github.com/VadimCpp/gorkogo55-landing-v2/blob/bagrationa49/assets/%20readme/background.jpg)
 
+# gorkogo55-landing-v2/mira84
+
+## Описание проекта
+
+ТЦ «Парковый» еще неизведан. Скоро тут добавится описание и изображение.
+
 ## Правила разработки
 
-Общий функционал сайтов реализовать в ветке master, а затем выполнить merge в ветки gorkogo55 и bagrationa49
+Общий функционал сайтов реализовать в ветке master, а затем выполнить merge в ветки gorkogo55, bagrationa49 и mira84
 
 Частные изменения (например: иконки, контакты) реализовать в соответствующей ветке
 
@@ -46,3 +52,4 @@
 Настроен Continuous deployment:
 * ветка gorkogo55 для сайта [gorkogo55.ru](https://gorkogo55.ru) (файл - gorkogo55.yml);
 * ветка bagration49 для сайта [bagrationa49.ru](https://bagrationa49.ru) (файл - bagrationa49.yml).
+* ветка mira84 для сайта [mira84.ru](https://mira84.ru) (файл - mira84.yml).
